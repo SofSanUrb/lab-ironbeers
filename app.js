@@ -48,8 +48,8 @@ app.get('/:id', (req,res) => {
   let id = req.params.id
   punkAPI
   .getBeer(id)
-  .then((id) => {
-    res.render('selectedbeer', {id})
+  .then((response) => {
+    res.render('random-beer', {response})
 
   })
 })

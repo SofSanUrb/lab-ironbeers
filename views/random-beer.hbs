@@ -1,15 +1,15 @@
 
-    <div class="rb">
-        {{#each response}}
+<div class="rb">
+    {{#each response}}
     <div class="randomBeer">
-    {{>beerpartial this}}
-   </div>
-   <div>
-    {{#each this.food_pairing}}
+        {{>beerpartial this}}
+    </div>
+    <div>
+        {{#each this.food_pairing}}
         <p>{{this}}</p>
-    {{/each}}
-    <p>{{this.brewers_tips}}</p>
+        {{/each}}
+        <p>{{this.brewers_tips}}</p>
     </div>
     {{/each}}
-    </div>
-    
+</div>
+
